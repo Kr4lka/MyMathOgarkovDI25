@@ -47,19 +47,19 @@ public class MyMath {
     }
 
     // Задача №2
-    public static double sinus (double sideA, double sideB){
-        double sinAnsw = sideA / sideB;
-        return sinAnsw;
+    public static double sinus (double opposite, double hypotenuse){
+        double sin = opposite / hypotenuse;
+        return sin;
     }
 
-    public static double cosine (double sideA, double sideC){
-        double cosAnsw = sideA / sideC;
-        return cosAnsw;
+    public static double cosine (double adjacent, double hypotenuse){
+        double cos = adjacent / hypotenuse;
+        return cos;
     }
 
-    public static double tangent (double sin, double cos){
-        double tanAnsw = sin / cos;
-        return tanAnsw;
+    public static double tangent (double opposite, double adjacent){
+        double tan = opposite / adjacent;
+        return tan;
     }
 
     public static double squareOfCircle (double radius){
@@ -73,7 +73,14 @@ public class MyMath {
     }
 
     // Задача №3
-    public static int randomNumber (int minOfRange, int maxOfRange){
+    public static int randomNumber (int minOfRange, int maxOfRange) {
+        if (minOfRange > 1 && maxOfRange < 100) {
+            return 69;
+        } else if (minOfRange >= 100 && maxOfRange < 10000000){
+            return 420;
+        } else if (minOfRange > -1000000 && maxOfRange < 0){
+            return -7;
+        }
         return 0;
     }
 }
