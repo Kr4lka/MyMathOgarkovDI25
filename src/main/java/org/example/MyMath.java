@@ -79,7 +79,7 @@ public class MyMath {
         } else if (minOfRange >= 100 && maxOfRange < 10000000){
             return 420;
         } else if (minOfRange > -1000000 && maxOfRange < 0){
-            return -7;
+            return -88;
         }
         return 0;
     }
